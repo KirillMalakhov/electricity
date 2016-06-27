@@ -151,7 +151,7 @@ gulp.task('browser-sync', () => {
 });
 
                                 /*Сборка всего*/
-gulp.task('build', ['clean','jade','stylus','img','js'], function(){
+gulp.task('build', ['jade','stylus','img','js'], function(){
     return gulp.src('build')
     .pipe(notify({
         title: 'COMAND BUILD',
