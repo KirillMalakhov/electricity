@@ -2,12 +2,14 @@
     padding: 0;
     list-style: none;
 
-.tabs-link 
+.tabs__caption li 
     display: inline-block;
     white-space: nowrap;
-    margin-right: 35px;
+    margin-left: 31px;
+.tabs__caption li:first-child
+        margin-left: 0px;
 
-.tabs-link a 
+.tabs__caption a 
     display: block;
     background-color: rgba(0,0,0,0.2);
     text-decoration: none;
@@ -16,13 +18,14 @@
     color: #fff;
     font-weight: bold;
 
-.tabs-link a:hover, .tabs-link.active a 
+.tabs__caption a:hover, .tabs__caption li.active  
     background-color: #fb8c00;
+    transition: 0.4s;
 
-.tab-item 
+.tabs__content
     display: none;
     color: #fff;
     
 
-.tab-item.active 
+.tabs__content.active 
     display: block;

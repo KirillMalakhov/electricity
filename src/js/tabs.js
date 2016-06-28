@@ -1,10 +1,12 @@
-var linkHref;
-$('.tabs-link a').on('click', function(event){
-  event.preventDefault();
-  $(this).closest('.tabs').find('.tabs-link.active').removeClass('active')
-  $(this).closest('.tabs-link').addClass('active');
-  
-  $(this).closest('.tabs').find('.tab-item.active').removeClass('active');
-  linkHref = $(this).attr('href');
-  $(linkHref).addClass('active');
+(function($) {
+$(function() {
+  $('.tabs__caption a').on('click', function(event){
+   event.preventDefault();});
+  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
 });
+})(jQuery);

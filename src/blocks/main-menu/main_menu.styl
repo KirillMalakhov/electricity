@@ -5,8 +5,9 @@
         a 
             text-decoration: none;
             &:hover
-                color: #ff7435;
-                border 1px solid #ff7435;
+               transition: 0.4s;
+               color: #ff7435;
+               border: 1px solid #ff7435;
         &-button
             text-align: center;
             display: block;
@@ -30,17 +31,23 @@
             width: 320px;
             height: 75px;
     &__nav
-        position: relative;
+
         ul 
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-content: center;
+            flex-wrap: wrap;
             margin-top: 60px;
             margin-bottom: 40px;
         li  
             display: inline-block;
-            padding-right: 65px;
+            
             a   
                 color: #fff;
                 text-decoration: none;
                 font-size: 20px;
                 &:hover
                     color: #ff7435;
+                    transition: 0.4s; 
                     
