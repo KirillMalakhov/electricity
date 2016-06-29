@@ -2,7 +2,8 @@
     &__btn
         font-family 'FuturaPT Heavy'
         text-align: center;
-        padding: 15px 50px 15px 50px;
+        padding 10px 140px 10px 140px
+        width: 442px;
         border: 2px solid #000;
         margin-bottom: 170px;
         text-decoration: none;
@@ -16,6 +17,13 @@
             border-bottom: 1px solid #000;
             text-align: right;
             font-size: 60px;
+            &:before 
+                position: absolute;
+                bottom -1px
+                left: -100%;
+                width: 100%;
+                content: ''
+                border-bottom: 1px solid #000;
         p 
             font-size: 20px;
             font-family 'FuturaPT Book'
