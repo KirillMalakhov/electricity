@@ -75,7 +75,7 @@
   position: relative;
   overflow: hidden;
   height: 659px;
-  width: 1260px;
+  width: 100%;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
