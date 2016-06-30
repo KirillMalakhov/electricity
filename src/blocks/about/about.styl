@@ -33,3 +33,67 @@
 
 .tabs__content.active 
     display: block;
+.tabs__form
+    &-btn
+        display: block;
+        text-decoration: none;
+        color: #000;
+        border: 2px solid #000;
+        padding: 10px 110px 10px 110px;
+        margin-left: 35px;
+        margin-top: 30px;
+        width: 378px;
+        font-family 'FuturaPT Heavy'
+        font-weight: bold;
+        text-transform: uppercase;
+        
+    display: none;
+    width: 460px;
+    height: 343px;
+    background-color: #fb8c00;
+    position: absolute;
+    top: 1194px;
+    right: -5px;
+    z-index 150
+    form 
+        width: 90%;
+        margin-left: 35px;
+        display: block;
+
+    &-title
+        font-family 'FuturaPT Book'
+        font-size: 20px;
+        color: #fff;
+        margin-left: 35px
+        margin-top: 25px;
+    &-exit
+        position: relative;
+        &:before 
+            content: '';
+            background-image: url(../images/close_black.png) ;
+            background-repeat: no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 434px;
+            top: -42px;
+            width: 15px;
+            height: 15px;
+.tabs__form-leftside
+    position: absolute;
+    top: 1340px;
+    right: -145px;
+    background-color: #fb8c00;
+    transform rotate(-90deg)
+    text-decoration: none;
+    margin: 0;
+    &-text 
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family 'FuturaPT Heavy'
+        color: #fff;
+        padding: 15px 60px 15px 60px;
+        margin: 0;
+        letter-spacing: 1px
+       
+        
