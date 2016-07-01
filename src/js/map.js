@@ -2410,25 +2410,19 @@ if (!Array.prototype.indexOf) {
 return GMaps;
 }));
 
-new GMaps({
+$(document).ready(function(){
+map1 = new GMaps({
   div: '#map',
   lat: 59.9233773,
-  lng: 30.3397119
-  
+  lng: 30.3397119,
+  scrollwheel: false  
 });
-
-url = GMaps.staticMapURL({
+map1.addMarker({
   lat: 59.9233773,
   lng: 30.3397119,
-  markers: [
-    {lat: 59.9233773, lng: 30.3397119},
-    {lat: 59.9233773, lng: 30.3397119,
-      size: 'small'},
-    {lat: 59.9233773, lng: 30.3397119,
-      color: 'blue'}
-  ]
+  title: 'Lima',
+  infoWindow: {
+  content: '<p>HTML Content</p>'
+}
 });
-
-
-$('<img/>').attr('src', url)
-  .appendTo('#map');
+});
